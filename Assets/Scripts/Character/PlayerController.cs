@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var interactPos = transform.position + facingDir;
 
+        // This is to see a line on the game on the direction that the character is looking
         // Debug.DrawLine(transform.position, interactPos, Color.green, 0.5f);
         
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.InteractableLayer);

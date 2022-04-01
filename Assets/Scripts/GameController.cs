@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
    {
        //playerController.OnEncountered += StartBattle;
        //battleSystem.OnBattleOver += EndBattle;
+    
 
         DialogManager.Instance.OnShowDialog += () =>
         {
